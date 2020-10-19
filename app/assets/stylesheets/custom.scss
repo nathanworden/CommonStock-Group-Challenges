@@ -1,0 +1,162 @@
+// @import "bootstrap-sprockets";
+// @import "bootstrap";
+
+/* universal */
+
+#container {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 2000px;
+}
+
+.container {
+ padding: 0;
+ height: 950px;
+ font-family: 'Metro Sans', sans-serif;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  // margin-bottom: 10px;
+}
+
+/* container */
+.container {
+  display: flex;
+}
+
+
+/* left */
+
+.left {
+  // border: 1px solid red;
+  flex: 15;
+
+  background-color: #F0F2F4;
+}
+
+
+/* right */
+
+.right {
+  // border: 1px solid blue;
+  box-shadow: -2px 0px 20px 0px rgba(221, 221, 221, 0.9);;
+  width: 200px;
+  height: 100%;
+}
+
+svg {
+  margin: 0px 4px 0px 0;
+}
+
+#invite {
+  background-color: rgb(11,211,211);
+  border: none;
+  width: 165px;
+  height: 35px;
+  font-family: 'Metro Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 2rem;
+  margin: 15px 18px 0px 18px;
+}
+
+.groups-div {
+  display: flex;
+  padding: 16px;
+  // align-items: flex-start;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+}
+
+.arrow-right {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px 0 0;
+  background-color: #8398AE;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  cursor: pointer;
+}
+
+.groups {
+  text-decoration: none;
+  color: #8398AE;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 30px 0 0;
+  cursor: pointer;
+}
+
+.plusButton {
+  display: flex;
+  border: 1px solid #8398Ae;
+  border-radius: 2rem;
+  margin: 0 0 0 0px;
+  color: #8398AE;
+  font-size: 12px;
+  width: 60px;
+  height: 18px;
+  text-align: center;
+  vertical-align: center;
+}
+
+#top-plusButton {
+  // position: relative;
+  // right: 10px;
+}
+
+#bottom-plusButton {
+  margin-left: 25px;
+}
+
+.plusButton svg {
+  margin: 3px 3px 3px 5px;
+}
+
+.plusButton span {
+  margin: 1px 0 1px 0;
+  // background-color: red;
+}
+
+.people {
+  // margin: 0 0 0 17px;
+}
+
+.person-holder .dropdown-item {
+  padding-left: 10px;
+}
+
+.people .person-holder {
+  height: 34px;
+  display: flex;
+  font-size: 13px;
+  font-weight: 100px;
+  color: #2d3645;
+  margin: 5px 0 5px 0;
+}
+
+img {
+  height: 25px;
+  border-radius: 100px;
+  margin: 0 0 0 15px;
+}
+
+.turnItPink {
+  color: pink;
+}

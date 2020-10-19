@@ -3,6 +3,11 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+//= require popper
+//= require turbolinks
+//= require bootstrap
+import 'bootstrap'
+
 require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
@@ -15,3 +20,10 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+document.addEventListener("DOMContentLoaded", event => {
+  console.log("loaded application.js!")
+  $('.groups').on('click',  event => {
+    event.target.classList.toggle('turnItPink')
+  })
+});
