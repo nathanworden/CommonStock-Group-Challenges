@@ -78,4 +78,27 @@ document.addEventListener("DOMContentLoaded", event => {
       chatbox.style.display = "none";
     }
   });
+
+  let commenceChallenge = document.querySelector('.commence-challenge');
+  commenceChallenge.addEventListener('click', event => {
+    document.getElementById('read-this').style.display = "flex";
+  });
+
+  let continueButton = document.querySelector('.continue');
+  continueButton.addEventListener('click', event => {
+    document.getElementById('challenge-question').style.display = "flex";
+  });
+
+  let submit = document.querySelector('.challenge-question-submit');
+  submit.addEventListener('click', event => {
+    document.getElementById('you-passed').style.display = "flex";
+  });
+
+  let messageTyler = document.querySelector('.message-tyler-button');
+  messageTyler.addEventListener('click', event => {
+    document.querySelector('.placeholder').setAttribute('placeholder', 'Message Tyler!')
+    document.querySelector('.locked').style.display = 'none';
+    document.querySelector('.airplane-glyph').style.display = "block";
+  });
+
 });

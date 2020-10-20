@@ -281,7 +281,7 @@ img {
 .challenge-title {
   font-size: 14px;
   font-weight: 600;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px 0px;
 }
 
 #challenge-area {
@@ -323,10 +323,27 @@ img {
 
 #challenge-text {
   width: 250px;
-  background-color: red;
 }
 
-#commence-challenge {
+#challenge-question {
+  display: none;
+  background-color: #2D3645;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  width: 385px;
+  border-radius: 10px;
+  margin: 40px 0 0 0;
+  padding: 30px 30px 30px 30px;
+  margin: 20px auto;
+  letter-spacing: .5px;
+}
+
+.challenge-question {
+  margin: auto;
+}
+
+.commence-challenge {
   width: 250px;
   height: 40px;
   background-color: rgb(11, 211, 211);
@@ -336,6 +353,20 @@ img {
   font-size: 16px;
   text-align: center;
   margin-top: 20px;
+  cursor: pointer;
+}
+
+.challenge-question-submit {
+  width: 100px;
+  height: 40px;
+  background-color: rgb(11, 211, 211);
+  color: rgb(45,54,69);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0 0 85px;
+  cursor: pointer;
 }
 
 .commence-challenge-text {
@@ -344,8 +375,8 @@ img {
   margin: 8px;
 }
 
-#read-this {
-  display: flex;
+ #read-this {
+  display: none;
   flex-wrap: wrap;
   align-items: center;
   background-color: #2D3645;
@@ -388,12 +419,73 @@ img {
   font-size: 16px;
   text-align: center;
   margin: 20px 0px 30px 90px;
+  cursor: pointer;
 }
 
 .bullet {
+  height: 25px;
+  width: 25px;
+  background-color: eee;
   display: list-item;
-  margin: 0;
+  margin: 10px 20px 10px 0px;
   padding: 0;
+}
+
+.question-1 {
+  padding: 0 0 0 20px;
+}
+
+.challenge-option {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#you-passed {
+  display: none;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #2D3645;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  width: 385px;
+  border-radius: 10px;
+  padding: 20px 30px 20px 30px;
+  margin: 20px auto;
+  letter-spacing: .5px;
+}
+
+.message-tyler-button {
+  width: 175px;
+  height: 40px;
+  background-color: rgb(11, 211, 211);
+  color: rgb(45,54,69);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin: 0px 0px 30px 50px;
+  cursor: pointer;
+}
+
+.message-tyler {
+  // width: 275px;
+  text-align: center;
+  margin: 10px 0 0 30px;
+  padding: 8px 0 0 0;
+  display: flex;
+}
+
+#you-passed-text {
+  margin: 20px 0 20px 30px;
+}
+
+#you-passed-icon {
+  width: 35px;
+  height: 35px;
+  fill: rgb(11, 211, 211);
+  margin: 0px 0px 0px 0px;
 }
 
 .chat-mid-footer {
@@ -401,6 +493,10 @@ img {
   font-weight: 200;
   padding: 10px;
   display: flex;
+}
+
+.locked {
+  margin: 5px 10px 0 0;
 }
 
 .continue-text {
@@ -429,7 +525,9 @@ img {
 }
 
 .airplane-glyph {
-  margin-top: 6px;
+  display: none;
+  margin: 6px 10px 0 0;
+
 }
 
 .chat-bottom-footer {
