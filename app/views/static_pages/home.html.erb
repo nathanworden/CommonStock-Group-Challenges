@@ -5,6 +5,105 @@
     <main id="container" class="container">
       <section class="left">
       </section>
+
+      <section id="chatbox">
+        <div class="chat-top-header">
+          <span class="chat-name">Cam</span>
+          <div class="chat-controls">
+            <svg class="expand-glyph" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="SVG_s125la8e" style="--s125la8e-0:1rem; --s125la8e-1: inherit; --s125la8e-2:0;"><path d="M15 3H21V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M9 21H3V15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 3L14 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3 21L10 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+            <svg class="close-chat-glyph" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="SVG_s125la8e" style="--s125la8e-0:1rem; --s125la8e-1: inherit; --s125la8e-2:0;"><path d="M6 6L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18 6L6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <div class="chat-mid-header">
+          <span class="challenge-tab">Challenge</span>
+          <span class="chat-tab">
+            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--color-Primary)" class="SVG_s125la8e" style="--s125la8e-0:0.8rem; --s125la8e-1:var(--color-Primary); --s125la8e-2:0;"><path d="M19 11H5C3.89543 11 3 11.8954 3 13V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V13C21 11.8954 20.1046 11 19 11Z" fill="var(--color-Background)" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            Chat
+            </span>
+        </div>
+
+        <div class="message-area">
+          <div id="challenge-area" class="challenge-area">
+            <div class="challenge-icons">
+              <div id="challenge-ruby-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.125 16.625c.011-.027 8.856-10.907 8.875-10.93l-4.938-5.695h-10.054l-5.008 5.625 8.896 11.01c1.102 1.528.118 2.85.118 2.85-.634 1-1.196 1.777-1.196 2.534 0 1.094.976 1.981 2.182 1.981 1.207 0 2.183-.887 2.183-1.981 0-.794-.599-1.462-1.29-2.534-.536-.883-.466-1.951.232-2.86zm-2.881-7.083l-1.491-3.542h6.494l-1.974 4.687c-.849-.495-1.824-1.214-3.029-1.145zm5.178 1.067c-.398.468-.802.559-1.229.469l2.139-5.078h2.843c-.017.021-3.762 4.634-3.753 4.609zm.727-8.609l2.601 3h-2.543l-3-3h2.942zm-1.356 3h-5.586l2.793-2.793 2.793 2.793zm-6.889-3h2.889l-3 3h-2.559l2.67-3zm-.236 4l1.589 3.774c-.288.12-.591.298-.904.529l-3.478-4.303h2.793zm4.458 17.118c.699-.262 1.126-1.222.825-2.213 1.036 1.227.206 2.348-.825 2.213z"/></svg>
+              </div>
+            <div id="challenge-person">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M16.944 9c.228 1.618-.206 3.713-1.633 6.259-1.231 2.196 1.438 2.99 4.169 3.586 2.449.534 2.532 1.685 2.523 3.701l-.003 1.454h-20l-.004-1.477c-.008-2.002.083-3.147 2.523-3.678 2.673-.583 5.491-1.378 4.223-3.586-1.449-2.525-1.896-4.628-1.667-6.259h9.869zm.056-1h-10v-4.011c0-.427-.016-.896-.428-1.085-.34-.157-.572-.506-.572-.904 0-.552.448-1 1-1 .75 0 1.331.842.799 1.597-.268.379-.204.608-.023.874.383.564.936 1.029 1.724 1.029 1.26 0 1.927-1.042 2.065-1.924.048-.307.075-.537-.218-.822-.201-.195-.347-.452-.347-.754 0-.552.448-1 1-1s1 .448 1 1c0 .302-.147.559-.348.754-.293.285-.266.515-.218.822.139.882.805 1.924 2.066 1.924.787 0 1.341-.465 1.723-1.029.181-.266.246-.495-.022-.874-.532-.755.049-1.597.799-1.597.552 0 1 .448 1 1 0 .398-.232.747-.572.904-.413.189-.428.658-.428 1.085v4.011z"/></svg>
+            </div>
+            <div id="challenge-mail-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 0l-4.5 16.5-6.097-5.43 5.852-6.175-7.844 5.421-5.411-1.316 18-9zm-11 12.501v5.499l2.193-3.323-2.193-2.176zm-8.698 6.825l-1.439-.507 5.701-5.215 1.436.396-5.698 5.326zm3.262 4.287l-1.323-.565 4.439-4.503 1.32.455-4.436 4.613zm-4.083.387l-1.481-.507 8-7.89 1.437.397-7.956 8z"/></svg>
+            </div>
+          </div>
+          <div id="challege-text">
+            <div class="challenge-title">Tyler Challenges You!</div>
+              <div class="challenge-message">
+                <span>Tyler is a technical generalist, and spends the majority of his time building companies from scratch.</span><br><br>
+                <span>Tyler has created a challenge for you. If you pass, you win the ability to direct message him. Good luck!</span>
+              </div>
+              <div id="commence-challenge">
+                <span class="commence-challenge-text">Commence Challenge!</span>
+              </div>
+            </div>
+          </div>
+
+          <div id="read-this">
+            <div id="read-this-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23 5v13.883l-1 .117v-16c-3.895.119-7.505.762-10.002 2.316-2.496-1.554-6.102-2.197-9.998-2.316v16l-1-.117v-13.883h-1v15h9.057c1.479 0 1.641 1 2.941 1 1.304 0 1.461-1 2.942-1h9.06v-15h-1zm-12 13.645c-1.946-.772-4.137-1.269-7-1.484v-12.051c2.352.197 4.996.675 7 1.922v11.613zm9-1.484c-2.863.215-5.054.712-7 1.484v-11.613c2.004-1.247 4.648-1.725 7-1.922v12.051z"/></svg>
+            </div>
+            <span id="read-this-text">To succeed you will need to read this:</span>
+            <a href="https://lastovich.me/" target="_blank">Lastovich.me</a>
+            <div class="continue">
+              <span class="continue-text">Continue</span>
+            </div>
+          </div>
+        </div>
+
+        <div id="challenge-area" class="challenge-area">
+          <div class="challenge-icons">
+            <div id="challenge-ruby-icon">
+            </div>
+          <div id="challenge-person">
+          </div>
+          <div id="challenge-mail-icon">
+          </div>
+        </div>
+        <div id="challege-text">
+          <div class="challenge-title">Where did Tyler grow up?</div>
+            <div class="challenge-message">
+              <span class="bullet">The DC Metro Area</span><br><br>
+              <span class="bullet">A small town in northern Minnesota</span><br><br>
+              <span class="bullet">London, France</span><br><br>
+              <span class="bullet"> Seoul, South Korea</span><br><br>
+            </div>
+            <div id="commence-challenge">
+              <span class="commence-challenge-text">Submit</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr">
+        <div class="chat-mid-footer">
+          <textarea class="placeholder" placeholder="Message Cam"></textarea>
+          <svg class="airplane-glyph" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" size="1.15" color="var(--color-BackgroundHover)" class="SVG_s125la8e" style="--s125la8e-0:1.15rem; --s125la8e-1:var(--color-BackgroundHover); --s125la8e-2:0;"><path d="M22 2L15 22L11 13L2 9L22 2Z" fill="transparent" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+        <hr class="hr">
+        <div class="chat-bottom-footer">
+          <svg class="dollar-sign" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="SVG_s125la8e" style="--s125la8e-0:1rem; --s125la8e-1: inherit; --s125la8e-2:0;"><path d="M12 1V23" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M17 5H9.5C8.57174 5 7.6815 5.36875 7.02513 6.02513C6.36875 6.6815 6 7.57174 6 8.5C6 9.42826 6.36875 10.3185 7.02513 10.9749C7.6815 11.6313 8.57174 12 9.5 12H14.5C15.4283 12 16.3185 12.3687 16.9749 13.0251C17.6313 13.6815 18 14.5717 18 15.5C18 16.4283 17.6313 17.3185 16.9749 17.9749C16.3185 18.6313 15.4283 19 14.5 19H6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+
+          <svg class="at-sign" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="SVG_s125la8e" style="--s125la8e-0:1rem; --s125la8e-1: inherit; --s125la8e-2:0;"><path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 7.99999V13C16 13.7956 16.3161 14.5587 16.8787 15.1213C17.4413 15.6839 18.2044 16 19 16C19.7957 16 20.5587 15.6839 21.1213 15.1213C21.6839 14.5587 22 13.7956 22 13V12C21.9999 9.74302 21.2362 7.55247 19.8333 5.78452C18.4303 4.01658 16.4706 2.77521 14.2726 2.26229C12.0747 1.74936 9.76794 1.99503 7.72736 2.95936C5.68677 3.92368 4.03241 5.54995 3.03327 7.57371C2.03413 9.59748 1.74898 11.8997 2.22418 14.1061C2.69938 16.3125 3.90699 18.2932 5.65064 19.7263C7.39429 21.1593 9.57144 21.9603 11.8281 21.9991C14.0847 22.0379 16.2881 21.3122 18.08 19.94" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+
+          <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="SVG_s125la8e" style="--s125la8e-0:1rem; --s125la8e-1: inherit; --s125la8e-2:0;"><path d="M19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z" fill="transparent" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.5 10C9.32843 10 10 9.32843 10 8.5C10 7.67157 9.32843 7 8.5 7C7.67157 7 7 7.67157 7 8.5C7 9.32843 7.67157 10 8.5 10Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M21 15L16 10L5 21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+
+          <svg class="gif-glyph" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="SVG_s125la8e" style="--s125la8e-0:1rem; --s125la8e-1: inherit; --s125la8e-2:0;"><path d="M12 3V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 3V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 3H22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 12H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path id="Rectangle 1940" d="M7.5 8.17479V5.74995C7.5 4.23115 6.26875 2.99993 4.74995 2.99995V2.99995C3.23119 2.99998 2 4.23119 2 5.74995V17.9999C2 19.6567 3.34315 20.9999 5 20.9999V20.9999C6.65685 20.9999 8 19.6567 8 17.9999V12.9999H5.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </section>
+
       <section class="right">
         <ul class="nav flex-column">
           <li class="nav-item">
@@ -23,9 +122,9 @@
           </li>
           
           <div class="nav-item groups-div">
-            <div class="dropdown">
-              <div class="arrow-right"></div>
-              <div class="groups"  d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+            <div id="groups" class="dropdown">
+              <div id="groupsArrow" class="arrow-right"></div>
+              <div class="groups"   aria-haspopup="true" aria-expanded="false" href="#">
               Groups
               </div>
               <div  id="top-plusButton" class="plusButton">
@@ -35,16 +134,52 @@
               </div>
             </div>
           </div>
-          <div class="" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Metaverse</a>
-            <a class="dropdown-item" href="#">Algorithmic Trading</a>
-            <a class="dropdown-item" href="#">Alpaca</a>
+          <div id="groupList" class="" aria-labelledby="dropdownMenuButton">
+            <div class="group-list-item" href="#">
+              <span class='locked-group'>
+                <span class='groupletter'>M</span>
+              </span>
+              <span class="groupName">Metaverse</span>
+            </div>
+            <div class="group-list-item" href="#">
+              <span class='locked-group'>
+                <span class='groupletter'>A</span>
+              </span>
+              <span class="groupName">Algorithmic Trading</span>
+            </div>
+            <div class="group-list-item" href="#">
+              <span class='locked-group'>
+                <span class='groupletter'>A</span>
+              </span>
+              <span class="groupName">Alpaca</span>
+            </div>
+
+            <span class="discover">Discover Groups</span>
+
+            <div class="group-list-item" href="#">
+              <span class='locked-group'>
+                <span class='groupletter'>C</span>
+              </span>
+              <span class="groupName">CFAs</span>
+            </div>
+            <div class="group-list-item" href="#">
+              <span class='locked-group'>
+                <span class='groupletter'>S</span>
+              </span>
+              <span class="groupName">Software Engineers</span>
+            </div>
+            <div class="group-list-item" href="#">
+              <span class='locked-group'>
+                <span class='groupletter'>W</span>
+              </span>
+              <span class="groupName">Woman's Group</span>
+            </div>
           </div>
 
           <div class="nav-item groups-div">
-            <div class="dropdown">
-              <div class="arrow-right"></div>
-              <div class="groups"  d="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+            <div id="dms" class="dropdown">
+              <div id="dms-arrow" class="arrow-right"></div>
+              <div class="groups"   aria-haspopup="true" aria-expanded="false" href="#">
               DMs
               </div>
               <div  id="bottom-plusButton" class="plusButton">
@@ -54,25 +189,26 @@
               </div>
             </div>
           </div>
-          <div class="people" aria-labelledby="dropdownMenuButton">
+          <div id="people" class="people" aria-labelledby="dropdownMenuButton">
             <div class="person-holder"><img src="/assets/1.david.png" /><div class="dropdown-item" href="#">David McDonough</div></div>
             <div class="person-holder"><img src="/assets/2.scott.png"/><div class="dropdown-item" href="#">Scott Barrow</div></div>
             <div class="person-holder"><img src="/assets/3.brenden.jpg"/><div class="dropdown-item" href="#">Brenden Mulligan</div></div>
-            <div class="person-holder"><img src="/assets/4.tyler.jpg"/><div class="dropdown-item" href="#">Tyler Lastovich</div></div>
             <div class="person-holder"><img src="/assets/5.michael.jpg"/><div class="dropdown-item" href="#">Michael McGuiness</div></div>
             <div class="person-holder"><img src="/assets/6.investmenttalk.jpg"/><div class="dropdown-item" href="#">Investment Talk</div></div>
             <div class="person-holder"><img src="/assets/7.eric.png"/><div class="dropdown-item" href="#">Eric rosner</div></div>
             <div class="person-holder"><img src="/assets/8.kent.jpg"/><div class="dropdown-item" href="#">Kent Goldman</div></div>
             <div class="person-holder"><img src="/assets/9.michael.png"/><div class="dropdown-item" href="#">Michael Zimmerman</div></div>
             <div class="person-holder"><img src="/assets/10.dhaval.png"/><div class="dropdown-item" href="#">Dhaval Kotecha</div></div>
+            <span class="discover">Discover People</span>
+            <div id="tyler-lastovich" class="person-holder"><img src="/assets/4.tyler.jpg"/><div class="dropdown-item" href="#">Tyler Lastovich</div></div>
             <div class="person-holder"><img src="/assets/11.laura.jpg"/><div class="dropdown-item" href="#">Laura Bock</div></div>
-            <div class="person-holder"><img src="/assets/12.jonathan.png"/><div class="dropdown-item" href="#">Jonathan Gregory</div></div>
-            <div class="person-holder"><img src="/assets/13.robbie.png"/><div class="dropdown-item" href="#">Robbie Young</div></div>
+            <div class="person-holder"><img src="/assets/17.kermit.jpg"/><div class="dropdown-item" href="#">Kermit Capital</div></div>
+            <%# <div class="person-holder"><img src="/assets/13.robbie.png"/><div class="dropdown-item" href="#">Robbie Young</div></div>
             <div class="person-holder"><img src="/assets/14.brittany.jpg"/><div class="dropdown-item" href="#">Brittany Joiner</div></div>
             <div class="person-holder"><img src="/assets/15.paul.jpg"/><div class="dropdown-item" href="#">Paul Essen</div></div>
             <div class="person-holder"><img src="/assets/16.harry.jpg"/><div class="dropdown-item" href="#">Harry Tormey</div></div>
-            <div class="person-holder"><img src="/assets/17.kermit.jpg"/><div class="dropdown-item" href="#">Kermit Capital</div></div>
             <div class="person-holder"><img src="/assets/18.terminal.jpg"/><div class="dropdown-item" href="#">Terminal Value</div></div>
+            <div class="person-holder"><img src="/assets/12.jonathan.png"/><div class="dropdown-item" href="#">Jonathan Gregory</div></div> %>
           </div>
         </ul>
       </section>

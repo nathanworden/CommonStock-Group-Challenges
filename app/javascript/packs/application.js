@@ -22,8 +22,60 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 document.addEventListener("DOMContentLoaded", event => {
-  console.log("loaded application.js!")
-  $('.groups').on('click',  event => {
-    event.target.classList.toggle('turnItPink')
+  // $('.groups').on('click',  event => {
+  //   event.target.classList.toggle('turnItPink')
+  // });
+
+  let groups = document.querySelector('#groups');
+  groups.addEventListener("click", event => {
+    let groupList = document.getElementById('groupList');
+    let groupsArrow = document.getElementById('groupsArrow');
+    if (groupList.style.display === 'block') {
+      groupList.style.display = 'none';
+      groupsArrow.classList.remove('arrow-down');
+      groupsArrow.classList.add('arrow-right');
+    } else {
+      groupList.style.display = 'block';
+      groupsArrow.classList.remove('arrow-right');
+      groupsArrow.classList.add('arrow-down');
+    }
   })
+
+  let dms = document.querySelector('#dms');
+  dms.addEventListener("click", event => {
+    let people = document.getElementById('people');
+    let dmsArrow = document.getElementById('dms-arrow');
+    if (people.style.display === 'block') {
+      people.style.display = 'none';
+      dmsArrow.classList.remove('arrow-down');
+      dms.querySelector('#dms-arrow').classList.add('arrow-right');
+    } else {
+      people.style.display = 'block';
+      dmsArrow.classList.remove('arrow-right');
+      dmsArrow.classList.add('arrow-down');
+    }
+  });
+
+  let groupList = document.getElementById('groupList');
+  let chatbox = document.getElementById('chatbox');
+  groupList.addEventListener('click', event => {
+    console.log(event.target);
+    console.log(chatbox.style.display);
+    if (!chatbox.style.display) {
+      chatbox.style.display = "block";
+    } else {
+      chatbox.style.display = "none";
+    }
+  });
+
+  let tyler = document.getElementById('tyler-lastovich');
+  tyler.addEventListener('click', event => {
+    console.log(event.target);
+    console.log(chatbox.style.display);
+    if (!chatbox.style.display || chatbox.style.display === "none") {
+      chatbox.style.display = "block";
+    } else {
+      chatbox.style.display = "none";
+    }
+  });
 });

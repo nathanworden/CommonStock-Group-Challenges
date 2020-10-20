@@ -37,6 +37,13 @@ textarea {
   display: flex;
 }
 
+/*chatbox */
+
+#chatbox {
+  width: 490px;
+  background-color: #fff;
+}
+
 
 /* left */
 
@@ -94,6 +101,16 @@ svg {
   cursor: pointer;
 }
 
+.arrow-down {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px 0 0;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+  background-color: #8398AE;
+  cursor: pointer;
+}
+
 .groups {
   text-decoration: none;
   color: #8398AE;
@@ -134,12 +151,39 @@ svg {
   // background-color: red;
 }
 
-.people {
-  // margin: 0 0 0 17px;
+#people {
+  display: none;
+}
+
+#groupList {
+  display: none;
 }
 
 .person-holder .dropdown-item {
   padding-left: 10px;
+  font-weight: 300;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+#groupList {
+  display: none;
+}
+
+.group-list-item {
+  font-size: 14px;
+  font-weight: 200;
+  padding-left: 20px;
+  display: block;
+  text-decoration: none;
+  color: #2D3645;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+}
+
+
+.group-list-item:hover {
+  background-color: #F0F2F4;
 }
 
 .people .person-holder {
@@ -159,4 +203,237 @@ img {
 
 .turnItPink {
   color: pink;
+}
+
+.discover {
+  color: rgb(11,211,211);
+  font-weight: 700;
+  // padding: 4px 24px;
+  margin: 0 0 0 40px;
+}
+
+.locked-group {
+  width: 12px;
+  height: 12px;
+  border: 1px solid grey;
+  font-size: 12px;
+  border-radius: 4px;
+  padding: 2px 5px 2px 7px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.group-letter {
+  margin: 3px 5px 3px 5px;
+}
+
+/* chatbox */
+
+#chatbox {
+  display: none;
+}
+
+.chat-top-header {
+  margin: 10px;
+  display: flex;
+}
+
+.chat-name {
+  flex: 20;
+  font-size: 12px;
+  font-weight: 600;
+  color: #899DB2;
+  margin: 10px 0px 10px 20px;
+}
+
+.expand-glyph {
+  color: #899DB2;
+}
+
+.close-chat-glyph {
+  color: #899DB2;
+}
+
+.chat-mid-header {
+  display: flex;
+  border-bottom: 1px solid rgba(137, 157, 178, 0.2);
+}
+
+.challenge-tab {
+  flex: 1;
+  text-align: center;
+  border-bottom: 2px solid #899DB2;
+  color: #899DB2;
+  font-weight: 700;
+}
+
+.chat-tab {
+  flex: 1;
+  text-align: center;
+  color: #899DB2;
+}
+
+.message-area {
+  max-height: 755px;
+  background-color: #FCFCFC;
+}
+
+.challenge-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+#challenge-area {
+  display: flex;
+  background-color: #2D3645;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  width: 385px;
+  border-radius: 10px;
+  margin: 40px 0 0 0;
+  padding: 30px 30px 30px 30px;
+  margin: 20px auto;
+  letter-spacing: .5px;
+}
+
+.challenge-icons {
+  width: 70px;
+}
+
+#challenge-mail-icon {
+  width: 50px;
+  height: 50px;
+  fill: rgb(11,211,211);
+  margin-top: 35px;
+}
+
+#challenge-ruby-icon {
+  width: 50px;
+  height: 50px;
+  fill: rgb(11, 211, 211)
+}
+
+#challenge-person {
+  width: 50px;
+  height: 50px;
+  fill: rgb(11, 211, 211)
+}
+
+#challenge-text {
+  width: 250px;
+  background-color: red;
+}
+
+#commence-challenge {
+  width: 250px;
+  height: 40px;
+  background-color: rgb(11, 211, 211);
+  color: rgb(45,54,69);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.commence-challenge-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px;
+}
+
+#read-this {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #2D3645;
+  font-size: 14px;
+  font-weight: 300;
+  color: white;
+  width: 385px;
+  border-radius: 10px;
+  padding: 10px 30px 0px 30px;
+  margin: 20px auto;
+  letter-spacing: .5px;
+}
+
+#read-this-icon {
+  width: 50px;
+  height: 50px;
+  fill: rgb(11, 211, 211);
+  margin: 27px 0px 0px 0px;
+}
+
+#read-this-text {
+  margin-bottom: 0px;
+}
+
+#read-this a {
+  text-align: center;
+  font-size: 18px;
+  text-decoration: underline;
+  margin: 0px 0px 0px 95px;
+  color: white;
+}
+
+.continue {
+  width: 125px;
+  height: 40px;
+  background-color: rgb(11, 211, 211);
+  color: rgb(45,54,69);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0px 30px 90px;
+}
+
+.bullet {
+  display: list-item;
+}
+
+.chat-mid-footer {
+  color: rgba(137, 157, 178, 0.7);
+  font-weight: 200;
+  padding: 10px;
+  display: flex;
+}
+
+.continue-text {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px;
+}
+
+#chatbox .hr {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.chat-mid-footer textarea {
+  resize: none;
+  border: none;
+  overflow: auto;
+  outline: none;
+  height: 30px;
+  flex: 20;
+}
+
+::placeholder {
+  color: rgba(137, 157, 178, 0.5);
+  font-weight: 300;
+}
+
+.airplane-glyph {
+  margin-top: 6px;
+}
+
+.chat-bottom-footer {
+  color: rgba(137, 157, 178, 1);
+}
+
+.chat-bottom-footer svg {
+  margin: 15px;
 }
